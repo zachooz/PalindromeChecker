@@ -26,12 +26,10 @@ public void setup(){
   }
 }
 public boolean palindrome(String word){
-	if(word.replaceAll("[^a-zA-Z]", "").toLowerCase().equals(new StringBuilder(word).reverse().toString().replaceAll("[^a-zA-Z]", "").toLowerCase())){
+	if(word.replaceAll("[^a-zA-Z]", "").toLowerCase().equals(new StringBuilder(word).reverse().toString().replaceAll("[^a-zA-Z]", "").toLowerCase()))
 		return true;
-	}
 	return false;
 }
-
   static public void main(String[] passedArgs) {
     String[] appletArgs = new String[] { "PalindromeChecker" };
     if (passedArgs != null) {
